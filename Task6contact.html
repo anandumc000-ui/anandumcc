@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task6.css">
+    <style>
+label{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+form{
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 20px gray;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+input:hover{
+    background-color: rgba(137, 132, 132, 0.267);
+}
+textarea{
+    width: 90%;
+    height: 80px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+textarea:hover{
+    background-color: rgba(137, 132, 132, 0.273);
+
+}
+.btn{
+    background-color: rgb(4, 4, 50);
+    width: 95%;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px
+}
+.btn:hover{
+    background-color: rgb(1, 1, 17);
+}
+.contact h2{
+    text-align: center;
+    margin-top: 80px;
+}
+h3{
+    text-align: center;
+}
+.contactlast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.contactlast img{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.contactlast div{
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.081);
+    width: 250px;
+    margin: 20px;
+    border-radius: 10px;
+}
+    </style>
+</head>
+
+<body>
+     <div class="container">
+    <b><div class="head">Mywebsite</div></b>
+    <div class="page">
+    <a href="index.html">Home</a>
+    <a href="Task6about.html">About</a>
+    <a href="Task6service.html">Service</a>
+    <a href="Task6contact.html">Contact us</a>
+    </div>
+    <button class="but">Logout</button>
+    </div>
+    <div class="contact">
+    <h2>Contact us</h2>
+    <p>Have questions? We'd love to hear from you.</p>
+    </div>
+    <form action="">
+        <h3>send message</h3>
+        <div class="q">
+        <input type="text" placeholder=" your name">
+        <input type="email" placeholder=" your email">
+        <input type="tel" placeholder="your phone number">
+        <textarea name="" id="" placeholder="your message"></textarea>
+        </div>
+        <input  class="btn"type="submit" value="Send message" >
+    </form>
+      <div class="contactlast">
+            <div class="loc">
+                <img src="data:image/png;base64,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" alt="">
+                <b><p>Address</p></b>
+                <p>Kozhikode, kerala ,india</p>
+            </div>
+            <div class="email">
+                <img src="data:image/png;base64,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" alt="">
+                <b><p>Email</p></b>
+                <p>mywebsite000@gmail.com</p>
+            </div>
+            <div class="phone">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-Oh7Rcm7pg88BJSxayPIzvr1FYgnQxoX1flkUjc7yQ&s=10" alt="">
+                <b><p>Phone</p></b>
+                <p>8714025543</p>
+            </div>
+
+        </div>
+    <div class="last">
+            <h3>Ready to build your website</h3>
+            <p>Contact us today and get your project started</p>
+            <button class="butnnn">contact us</button>
+        </div>
+       
+
+    
+</body>
+</html>
